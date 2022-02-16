@@ -527,3 +527,25 @@ footer {
   }
 }
 
+
+/* Form validity */
+  
+.error-message {
+  display: none;
+  color: red;
+  margin-top: .2em;
+  font-size: .8rem;
+}
+
+.formData.error input {
+  border: 2px solid red;
+}
+
+.formData.error .error-message {
+  display: block;
+}
+
+.formData.success input {
+  border: 2px solid green;
+}
+
