@@ -37,9 +37,16 @@ function launchModal() {
 
 const closeModal = event => {
   modalbg.style.display = "none"
+  confirmationModal.style.display = "none"
+  for (let data of formData) {
+    data.classList.remove('success')
+  }
+  form.reset()
 }
 
 closeBtn.addEventListener('click', closeModal)
+closeBtnPostSubmit.addEventListener('click', closeModal)
+closeConfirmationModal.addEventListener('click', closeModal)
 
 
 
@@ -92,8 +99,16 @@ const checkInputs = () => {
 // Manage form submission
 
 const formSubmit = e => {
+  //Prevent the page to reload
   e.preventDefault()
+  
+  //Check the validity of all the inputs
   checkInputs()
+
+  // Confirmation modal display
+  if (form.checkValidity()) {
+    confirmationModal.style.display = "block"
+  }
 }
 
 form.addEventListener('submit', formSubmit)

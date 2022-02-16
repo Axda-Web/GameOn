@@ -549,3 +549,42 @@ footer {
   border: 2px solid green;
 }
 
+
+/* Confirmation modal */
+  
+.submit-confirmation-container {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #232323;
+}
+
+.submit-confirmation-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-confirmation__message {
+  margin: auto;
+}
+
+.submit-confirmation__btn {
+  background: #fe142f;
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 12px 82px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  margin-bottom: 1em;
+}
+
