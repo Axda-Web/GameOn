@@ -474,9 +474,10 @@ footer {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 3px;
+    top: 3px;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
@@ -509,6 +510,11 @@ footer {
     margin-top: -10px;
   }
 
+  .topnav.responsive .icon {
+    right: 3px;
+    top: 8px;
+  }
+
   .header-logo img {
     width: 230px;
   }
@@ -533,13 +539,13 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 3.5rem;
+    font-size: 3rem;
     white-space: normal;
     line-height: 1.2;
   }
   .hero-text {
     width: unset;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 1em;
   }
   .hero-img img {
@@ -566,6 +572,18 @@ footer {
 
   .topnav a.icon {
     margin-top: -15px;
+  }
+
+  .topnav.responsive {
+    overflow: visible;
+  }
+
+  .topnav.responsive .main-navbar {
+    margin-top: -15px;
+  }
+
+  .topnav.responsive .icon {
+    top: 0;
   }
 
   .icon i {

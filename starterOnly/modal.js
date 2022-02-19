@@ -1,8 +1,12 @@
 function editNav() {
-  var x = document.getElementById("myTopnav");
+  const x = document.getElementById("myTopnav");
+  const hamburgerMenu = document.querySelector('.icon')
+  
   if (x.className === "topnav") {
     x.className += " responsive";
+    hamburgerMenu.innerHTML = "<span class='close'></span>"
   } else {
+    hamburgerMenu.innerHTML = "<i class='fa fa-bars'></i>"
     x.className = "topnav";
   }
 }
@@ -72,7 +76,7 @@ const checkInputs = () => {
       locationArr.push(input.checked)
     }
 
-    //Check the validity of all the inputs
+    //Check the validity of all the other inputs
     if(!input.checkValidity()){
       setErrorStyle(input)
     } else {
