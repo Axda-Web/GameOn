@@ -76,7 +76,7 @@ img {
 }
 
 main {
-  font-size: 130%;
+  font-size: 100%;
   font-weight: bolder;
   color: black;
   padding-top: 0.5vw;
@@ -377,7 +377,7 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
+
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
